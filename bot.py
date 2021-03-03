@@ -67,21 +67,4 @@ async def gdata(ctx, sym):
     await ctx.send(file=discord.File('.\send_stock\\' + sym + '.png'))
 
 
-@bot.command()
-async def penelope(ctx, test):
-    await ctx.send('You passed {}'.format(test))
-    queen_images = ["img\pen1.png", "img\pen2.png", "img\pen3.png"]
-    queen_quotes = [
-        (
-            "You corporate fucking prick I did not become a doctor just to suck the devil's dick"
-            "Bingpot!"
-        ),
-        "Well I don't want to eat the rich, I'd have to eat my heroes first",
-        (
-            "But Ted Bundy was just never that fuckin’ bright"
-            "He was just sorta charismatic and white, alright?"
-        ),
-    ]
-    
-
 bot.run(TOKEN)
